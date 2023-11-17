@@ -1,6 +1,6 @@
 <template>
   <div v-if="!isFinished" data-v-onboarding-wrapper>
-    <slot :key="index" :step="activeStep" :next="next" :previous="previous" :exit="exit" :is-first="isFirstStep" :is-last="isLastStep" :index="index">
+    <slot :key="index" :step="activeStep" :next="next" :previous="previous" :exit="exit" :is-first="isFirstStep" :is-last="isLastStep" :index="index" :finish="finish">
       <VOnboardingStep :key="index" />
     </slot>
   </div>
